@@ -13,6 +13,15 @@ fieldset{
 	margin: 1em 0;
 }
 
+.discountText{
+	color: red;
+}
+
+.discountText span{
+	color: red;
+	font-weight: bold;
+}
+
 legend{
 	border-bottom: 1px solid #cccccc;
 	margin-bottom: 1em;
@@ -43,6 +52,11 @@ header{
 
 .my-table .row > div{
 	margin-bottom: 10px;
+}
+
+.product-title{
+    display: flex;
+    justify-content: space-between;
 }
 
 .my-table .row > div > *{
@@ -79,7 +93,12 @@ header{
 .product-body{
 	width: 50%;
 	padding: 1em 2em;
+	display: flex;
+	flex-direction: column;
+	justify-content: space-between	;
 }
+
+
 
 .products .form-control{
 	margin-top: 1em;
