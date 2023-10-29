@@ -6,9 +6,9 @@ use Illuminate\Database\Eloquent\Model;
 
 class Product extends Model
 {
-    public function types()
+    public function category()
     {
-    	return $this->hasMany(Type::class);
+    	return $this->belongsTo(Category::class);
     }
     public function getPriceAttribute($value)
     {
