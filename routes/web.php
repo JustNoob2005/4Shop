@@ -51,6 +51,7 @@ Route::group(['middleware' => 'auth', 'prefix' => 'admin'], function () {
 
     Route::get('orders/factory', [AdminOrderController::class, 'factory'])->name('admin.orders.factory');
     Route::get('orders/mail', [AdminOrderController::class, 'mail'])->name('admin.orders.mail');
+    Route::get('orders/mail', [AdminOrderController::class, 'mail'])->name('admin.orders.mail');
     Route::post('orders/mail', [AdminOrderController::class, 'mail_send'])->name('admin.orders.mail.send');
     Route::get('orders/packing', [AdminOrderController::class, 'packing'])->name('admin.orders.packing');
     Route::resource('orders', AdminOrderController::class, ['as' => 'admin'])->only(['index', 'show', 'destroy']);

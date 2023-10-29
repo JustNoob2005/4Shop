@@ -9,6 +9,11 @@ form{
 	margin-top: 2em;
 }
 
+.catEditGeneral{
+    display: flex;
+    justify-content: space-between;
+}
+
 fieldset{
 	margin: 1em 0;
 }
